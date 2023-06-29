@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import styles from './Header.module.css';
 import NavMenu from './NavMenu';
+import logo from '../logo.png';
 
 function Header() {
 
@@ -16,7 +17,8 @@ function Header() {
   return (
     <div className={`${styles.header_wrap} ${scroll ? styles.scrolled : ''}`}>
       <header className={styles.header}>
-        <NavMenu></NavMenu>
+        <img src={logo} ></img>
+        <NavMenu />
       </header>
     </div>
   );

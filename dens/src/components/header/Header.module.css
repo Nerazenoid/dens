@@ -12,6 +12,8 @@
     height: 120px;
     transition: 0.3s;
     border-bottom: 1px solid black;
+    display: flex;
+    align-items: flex-end;
 }
 .header_wrap::before{
     content: '';
@@ -26,7 +28,7 @@
     transition: 0.3s;
 }
 .header_wrap.scrolled{
-    transform: translateY(-20px);
+    transform: translateY(-40px);
 }
 .header_wrap.scrolled::before{
     opacity: 1;
