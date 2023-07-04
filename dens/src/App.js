@@ -1,10 +1,14 @@
 import './App.css';
-import Header from './components/header/Header.js';
+import TopBar from './components/header/TopBar.jsx';
+import MainSlider from './components/MainSlider';
 
 function App() {
   return (
     <div className="App">
-        <Header></Header>
+        <TopBar />
+        <div className='main_content'>
+          <MainSlider />
+        </div>
     </div>
   );
 }
