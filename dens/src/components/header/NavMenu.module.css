@@ -1,6 +1,9 @@
 .nav_menu{
     display: flex;
     list-style: none;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 .nav_item{
     padding-right: 20px;
