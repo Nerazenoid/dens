@@ -1,3 +1,6 @@
+@keyframes logoAnimation{
+    
+}
 .topbar_wrap{
     width: 100%;
     position: fixed;
@@ -5,18 +8,16 @@
     left: 0;
     right: 0;
     z-index: 100;
-    transition: 0.3s;
-    border-bottom: 1px solid black;
     display: flex;
     flex-direction: column;
+    transition: all 0.1s ease-out;
 }
 .header_wrap{
     width: 100%;
-    border-bottom: 1px solid black;
 }
 .header{
     margin: 0 auto;
-    max-width: 1500px;
+    max-width: 1600px;
     display: flex;
 }
 .topbar_wrap::before{
@@ -29,20 +30,21 @@
     right: 0;
     opacity: 0;
     z-index: -1;
-    transition: 0.3s;
+    transition: 0.3s ease-in;
 }
 .topbar_wrap.scrolled{
-    transform: translateY(-40px);
+    transform: translateY(-70px);
+    transition: all 0.15s ease-out 0.25s;
+    box-shadow: 0 0 10px #7a7a7aa3;
 }
 .topbar_wrap.scrolled::before{
     opacity: 1;
 }
 .logo_wrap{
     flex-grow: 1;
-}
-.logo_wrap img{
-    width: 80px;
-    height: 80px;
+    transition: 0.2s;
+    position: relative;
+    transform: translateY(30px);
 }
 .contacts_list{
     list-style: none;
@@ -59,4 +61,50 @@
     height: 20px;
     position: absolute;
     left: -24px;
+}
+.scrolled .logo_wrap{
+    transform: translateX(-40px) translateY(60px);
+    transition: 0.2s 0.3s;
+}
+.logo_wrap::before{
+    margin-top: 12px;
+    content: '';
+    background-image: url('../logo.png');
+    background-size: 80px 80px;
+    position: absolute;
+    border-radius: 100%;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    transform: scale(1.1);
+    opacity: 0;
+    transition: all 0.5s 0.1s, opacity 0.3s;
+    z-index: 2;
+}
+.scrolled .logo_wrap::before{
+    transform: scale(1);
+    transition: all 0.1s ease-in 0.4s, opacity 0.15s ease-in 0.4s;
+    opacity: 1;
+}
+.logo_text{
+    width: 230px;
+    height: 130px;
+    filter: brightness(100%);
+    transition: all 0.2s ease-in 0.05s, width 0.3s 0.2s, opacity 0.2s;
+    background-image: url('../logoText.png');
+    background-repeat: no-repeat;
+    transform: scale(1);
+    transform-origin: center 20%;
+    opacity: 1;
+
+    margin-left: 4px;
+
+    background-size: 230px 130px;
+}
+.scrolled .logo_text{
+    transform: scale(0.7);
+    opacity: 0;
+    transition: all 0.2s ease-in 0.2s,  width 0.15s 0s, opacity 1s ease-out 0.3s;
+    width: 72px;
 }

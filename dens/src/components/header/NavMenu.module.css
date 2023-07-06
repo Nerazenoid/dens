@@ -2,12 +2,13 @@
     display: flex;
     list-style: none;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 .nav_item{
-    padding-right: 20px;
-    font-size: 16px;
+    padding-right: 28px;
+    font-size: 20px;
     font-weight: 600;
     color: #001c00;
+    line-height: 30px;
 }
