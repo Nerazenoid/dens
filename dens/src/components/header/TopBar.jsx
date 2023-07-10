@@ -22,8 +22,8 @@ function TopBar() {
           <Logo />
           <Contacts />
         </div>
+        <NavMenu />
       </header>
-      <NavMenu />
     </div>
   );
 }

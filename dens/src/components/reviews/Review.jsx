@@ -10,12 +10,12 @@ function Review(props) {
                     <img src={props.img_url} />
                 </div>
                 <div className={styles.item_info}>
-                    <p>{props.username}</p>
-                    <p>{props.from}</p>
+                    <p className={styles.user}>{props.username}</p>
+                    <p className={styles.item_from}>{props.from}</p>
                 </div>
             </div>
             <p className='body'>{props.body}</p>
-            <p>{props.date}</p>
+            <p className={styles.date}>{props.date}</p>
         </div>
     );
 }

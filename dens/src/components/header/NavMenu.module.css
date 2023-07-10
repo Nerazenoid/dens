@@ -1,14 +1,38 @@
+.main{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    margin: 0 auto;
+}
 .nav_menu{
     display: flex;
     list-style: none;
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
+    width: 46%;
+    justify-content: flex-end;
 }
 .nav_item{
     padding-right: 28px;
     font-size: 20px;
     font-weight: 600;
     color: #001c00;
-    line-height: 30px;
+}
+.login_btn{
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 6px 10px;
+    font-weight: 600;
+    color: white;
+    margin-left: 20px;
+}
+.appointment_btn{
+    border: 1px solid green;
+    border-radius: 20px;
+    padding: 6px 10px;
+    background-color: green;
+    color: white;
+    font-weight: 600;
+}
+.scrolled .main{
+    transform: translateY(-20px);
+    transition: 1s;
 }
