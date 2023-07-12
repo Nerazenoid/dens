@@ -3,6 +3,7 @@
     justify-content: space-between;
     padding: 0 40px;
     margin: 0 auto;
+    transition: 0.4s ease-out 0.1s;
 }
 .nav_menu{
     display: flex;
@@ -14,7 +15,8 @@
     padding-right: 28px;
     font-size: 20px;
     font-weight: 600;
-    color: #001c00;
+    color: #196618;
+    transition: 0.3s;
 }
 .login_btn{
     border: 1px solid white;
@@ -32,7 +34,10 @@
     color: white;
     font-weight: 600;
 }
-.scrolled .main{
+:global(.scrolled) .main{
     transform: translateY(-20px);
-    transition: 1s;
+    transition: 0.4s ease-out 0.1s;
+}
+:global(.scrolled) .nav_item{
+    font-size: 22px;
 }

@@ -16,7 +16,7 @@ function TopBar() {
   })
 
   return (
-    <div className={`${styles.topbar_wrap} ${scroll ? styles.scrolled : ''}`}>
+    <div className={`${styles.topbar_wrap} ${scroll ? 'scrolled' : ''}`}>
       <header className={styles.header_wrap}>
         <div className={styles.header}>
           <Logo />
